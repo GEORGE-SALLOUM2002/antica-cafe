@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>انتيكا · Antica Café</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--dark:#3B2920;--wood:#76533B;--car:#B18A61;--cream:#E9DCC3;--olive:#A5A080;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--dark);font-family:'Amiri',Georgia,serif;font-size:17px;background-image:radial-gradient(rgba(118,83,59,.09) 1px,transparent 1px);background-size:14px 14px}
+.en{font-family:'Playfair Display',Georgia,serif}
+header{background:var(--dark);color:var(--cream);text-align:center;padding:28px 16px 22px;border-bottom:6px double var(--car)}
+.logo{width:130px;height:130px}
+h1{margin:6px 0 0;font-size:2rem;font-weight:700}
+.tag{font-style:italic;color:var(--car);font-size:1.2rem;margin:4px 0}
+.tag-ar{color:var(--olive);margin:0}
+nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:20px 12px 6px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--cream);z-index:5}
+nav button{background:transparent;border:2px solid var(--wood);color:var(--wood);padding:8px 18px;border-radius:30px;cursor:pointer;font:inherit;line-height:1.2;text-align:center}
+nav button small{display:block;font-size:.8rem}
+nav button.on{background:var(--wood);color:var(--cream);box-shadow:0 3px 0 var(--dark)}
+main{max-width:1000px;margin:0 auto;padding:10px 16px 50px}
+h2{text-align:center;color:var(--wood);margin:18px 0 4px;font-size:1.8rem}
+.orn{text-align:center;color:var(--car);letter-spacing:8px;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{background:#f3e9d4;border:1px solid var(--car);outline:3px double var(--car);outline-offset:-8px;border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:8px;box-shadow:0 4px 10px rgba(59,41,32,.18);position:relative}
+.pic{height:170px;border-radius:4px;background:linear-gradient(135deg,var(--olive),var(--car));display:flex;align-items:center;justify-content:center;font-size:4rem;overflow:hidden;filter:sepia(.35);border:2px solid var(--wood)}
+.pic img{width:100%;height:100%;object-fit:cover}
+.nm{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.nm b{font-size:1.3rem}.nm i{font-size:1.05rem;color:var(--wood)}
+.d-ar{margin:0;direction:rtl;text-align:right;line-height:1.5}
+.d-en{margin:0;direction:ltr;text-align:left;font-size:.92rem;color:var(--wood);font-style:italic}
+.price{margin-top:auto;padding-top:6px;border-top:1px dashed var(--car);text-align:center;font-weight:700;color:var(--wood);font-size:1.15rem}
+.off{filter:grayscale(.9);opacity:.72}
+.badge{position:absolute;top:22px;inset-inline-start:-6px;background:var(--dark);color:var(--cream);padding:3px 14px;font-size:.85rem;transform:rotate(-4deg);z-index:2}
+footer{text-align:center;background:var(--dark);color:var(--car);padding:18px;font-size:.9rem}
+footer a{color:var(--cream);cursor:pointer;text-decoration:underline}
+.adm{background:#f3e9d4;border:2px solid var(--wood);padding:14px;border-radius:6px;margin-bottom:16px;display:grid;gap:8px}
+.adm input,.adm textarea{width:100%;font:inherit;padding:6px;border:1px solid var(--car);background:var(--cream);color:var(--dark)}
+.adm .r{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.btn{background:var(--wood);color:var(--cream);border:0;padding:8px 16px;cursor:pointer;font:inherit;border-radius:4px}
+.btn.x{background:#8a3b2b}.btn.g{background:var(--olive);color:var(--dark)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+</style>
+</head>
+<body>
+<header>
+<svg class="logo" viewBox="0 0 200 200" aria-label="Antica logo">
+<defs><path id="c" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+<circle cx="100" cy="100" r="96" fill="#3B2920" stroke="#B18A61" stroke-width="4"/>
+<circle cx="100" cy="100" r="88" fill="none" stroke="#B18A61" stroke-width="1.5"/>
+<circle cx="100" cy="100" r="52" fill="#76533B" stroke="#E9DCC3" stroke-width="2"/>
+<text font-family="Playfair Display,Georgia,serif" font-size="17" letter-spacing="4" fill="#E9DCC3"><textPath href="#c" startOffset="4%">ANTICA ✦ CAFÉ ✦ EST. ✦ VINTAGE ✦</textPath></text>
+<path d="M78 92h38v14a19 19 0 0 1-38 0z M116 96h6a7 7 0 0 1 0 14h-6" fill="none" stroke="#E9DCC3" stroke-width="3"/>
+<path d="M88 84c-3-5 3-7 0-12M98 84c-3-5 3-7 0-12M108 84c-3-5 3-7 0-12" fill="none" stroke="#B18A61" stroke-width="2"/>
+<text x="100" y="138" text-anchor="middle" font-family="Amiri,serif" font-size="20" fill="#E9DCC3">انتيكا</text>
+</svg>
+<h1><span>انتيكا</span> · <span class="en">Antica</span></h1>
+<p class="tag en">A Little Place to Feel at Home</p>
+<p class="tag-ar">مكان صغير تشعر فيه وكأنك في بيتك</p>
+</header>
+<nav id="nav"></nav>
+<main id="app"></main>
+<footer><span class="en">Antica Café · ✦</span> <a id="lnk">لوحة التحكم · Admin</a></footer>
+<script>
+const KEY='antica_v2',PASS='antica123';
+const SEED=[
+{id:'hot',ar:'المشروبات الساخنة',en:'Hot Drinks',ic:'☕',items:[
+['إسبريسو','Espresso','قهوة إيطالية مركزة ذات نكهة قوية ورغوة ذهبية','A strong Italian coffee topped with golden crema.'],
+['كابتشينو','Cappuccino','إسبريسو مع الحليب المبخر ورغوة الحليب الكثيفة','Espresso with steamed milk and thick milk foam.'],
+['لاتيه','Caffè Latte','إسبريسو ممزوج بالحليب الساخن مع طبقة خفيفة من الرغوة','Espresso blended with steamed milk and a light foam layer.'],
+['أمريكانو','Americano','إسبريسو مخفف بالماء الساخن بنكهة متوازنة','Espresso diluted with hot water for a smooth taste.'],
+['موكا','Mocha','مزيج غني من الإسبريسو والشوكولاتة والحليب الساخن','A rich blend of espresso, chocolate and steamed milk.'],
+['قهوة تركية','Turkish Coffee','قهوة تقليدية محضرة على نار هادئة بنكهة غنية','Traditional finely ground coffee, slowly brewed.'],
+['فلات وايت','Flat White','إسبريسو مع حليب مبخر بقوام ناعم وكريمي','Espresso combined with silky steamed milk.'],
+['ماكياتو','Macchiato','إسبريسو مع لمسة صغيرة من رغوة الحليب','Espresso topped with a small amount of milk foam.']]},
+{id:'cold',ar:'المشروبات الباردة',en:'Cold Drinks',ic:'🧊',items:[
+['آيس أمريكانو','Iced Americano','إسبريسو مع الماء البارد ومكعبات الثلج','Espresso served with cold water and ice.'],
+['آيس لاتيه','Iced Latte','إسبريسو مع الحليب البارد والثلج','Espresso mixed with cold milk and ice.'],
+['آيس موكا','Iced Mocha','قهوة باردة ممزوجة بالشوكولاتة والحليب','Iced coffee blended with chocolate and milk.'],
+['فرابتشينو','Frappuccino','مشروب قهوة مثلج مخفوق بقوام كريمي','A blended iced coffee with a creamy texture.'],
+['آيس تي بالليمون','Iced Lemon Tea','شاي بارد منعش مع الليمون والثلج','Refreshing chilled tea with lemon and ice.'],
+['ليمون ونعناع','Lemon Mint','ليمون طازج ممزوج بالنعناع والثلج','Fresh lemon blended with mint and ice.'],
+['موهيتو كلاسيك','Classic Mojito','ليمون ونعناع وصودا مع الثلج','Lime, mint and soda served over ice.'],
+['موهيتو فراولة','Strawberry Mojito','فراولة مع الليمون والنعناع والصودا','Strawberry with lime, mint and soda.']]},
+{id:'des',ar:'الحلويات',en:'Desserts',ic:'🍰',items:[
+['تشيز كيك','Cheesecake','قطعة تشيز كيك كريمية على قاعدة بسكويت مقرمشة','Creamy cheesecake on a buttery biscuit base.'],
+['براونيز','Chocolate Brownie','كيك شوكولاتة كثيف وغني','A rich, dense chocolate cake served soft.'],
+['مولتن كيك','Molten Chocolate Cake','كيك شوكولاتة دافئ بقلب شوكولاتة سائل','Warm chocolate cake with a flowing molten center.'],
+['وافل','Waffle','وافل طازج يقدم مع صوص الشوكولاتة أو الفواكه','Fresh waffle served with chocolate sauce or fruit.'],
+['بان كيك','Pancakes','طبقات بان كيك طرية تقدم مع العسل أو الشوكولاتة','Soft pancakes served with honey or chocolate.'],
+['كريب شوكولاتة','Chocolate Crepe','كريب رقيق محشو بالشوكولاتة','A thin crepe filled with chocolate.'],
+['كنافة بالقشطة','Kunafa with Cream','كنافة شرقية محشوة بالقشطة ومزينة بالقطر','Middle Eastern pastry filled with cream and drizzled with syrup.'],
+['سلطة فواكه','Fruit Salad','تشكيلة فواكه طازجة مقطعة','A colorful mix of freshly cut seasonal fruits.']]},
+{id:'food',ar:'الوجبات والأطباق',en:'Meals & Food',ic:'🍔',items:[
+['برغر لحم','Beef Burger','قطعة لحم مشوية مع الخس والطماطم والصلصة داخل خبز البرغر','Grilled beef patty with lettuce, tomato and sauce in a burger bun.'],
+['برغر دجاج','Chicken Burger','دجاج مقرمش أو مشوي مع الخضار والصلصة','Crispy or grilled chicken with vegetables and sauce.'],
+['كلوب ساندويش','Club Sandwich','طبقات من الدجاج والجبنة والخضار والخبز المحمص','Layers of chicken, cheese and vegetables in toasted bread.'],
+['ساندويش دجاج مشوي','Grilled Chicken Sandwich','دجاج مشوي مع الخضار والصلصة في خبز طازج','Grilled chicken with vegetables and sauce in fresh bread.'],
+['شاورما دجاج','Chicken Shawarma','شرائح دجاج متبلة تقدم مع الثوم والمخلل والخبز','Marinated chicken served with garlic sauce, pickles and bread.'],
+['بيتزا مارغريتا','Margherita Pizza','عجينة بيتزا مع صلصة الطماطم والموزاريلا والريحان','Pizza dough topped with tomato sauce, mozzarella and basil.'],
+['بيتزا بيبروني','Pepperoni Pizza','بيتزا بصلصة الطماطم وجبنة الموزاريلا والبيبروني','Pizza topped with tomato sauce, mozzarella and pepperoni.'],
+['باستا ألفريدو','Chicken Alfredo Pasta','باستا بالدجاج وصلصة ألفريدو الكريمية','Pasta with chicken in a creamy Alfredo sauce.']]}];
+const PR={hot:[200,300,350,250,300,250,350,200],cold:[300,450,500,500,400,400,450,600],des:[400,550,700,650,450,500,650,800],food:[900,700,850,700,400,600,650,500]};
+const mk=()=>SEED.map(c=>({...c,items:c.items.map((a,i)=>({id:c.id+i,an:a[0],en:a[1],ad:a[2],ed:a[3],p:PR[c.id][i],ok:true,img:''}))}));
+let D;try{D=JSON.parse(localStorage.getItem(KEY))}catch(e){}
+if(!Array.isArray(D)||!D.length)D=mk();
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){alert('تعذر الحفظ / Could not save (image too large?)')}};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=p=>p==null||p===''?'— ل.س':Number(p).toLocaleString('en-US')+' ل.س';
+let cur=D[0].id,admin=false,authed=false;
+const $=id=>document.getElementById(id);
+function nav(){$('nav').innerHTML=D.map(c=>`<button class="${c.id===cur?'on':''}" data-c="${c.id}">${c.ic} ${esc(c.ar)}<small class="en">${esc(c.en)}</small></button>`).join('');
+$('nav').querySelectorAll('button').forEach(b=>b.onclick=()=>{cur=b.dataset.c;route()})}
+const slug=s=>String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+function pic(i,ic){return `<div class="pic"><img src="${i.img||'images/'+slug(i.en)+'.jpg'}" alt="${esc(i.en)}" onerror="this.replaceWith(document.createTextNode('${ic}'))"></div>`}
+function menu(){const c=D.find(x=>x.id===cur)||D[0];
+$('app').innerHTML=`<h2>${esc(c.ar)} <span class="en">· ${esc(c.en)}</span></h2><div class="orn">✦ ✦ ✦</div><div class="grid">`+c.items.map(i=>`<article class="card ${i.ok?'':'off'}">${i.ok?'':'<span class="badge">غير متوفر · Unavailable</span>'}${pic(i,c.ic)}<div class="nm"><b>${esc(i.an)}</b><i class="en">${esc(i.en)}</i></div><p class="d-ar">${esc(i.ad)}</p><p class="d-en en">${esc(i.ed)}</p><div class="price">${i.ok?fmt(i.p):'غير متوفر حالياً'}</div></article>`).join('')+'</div>'}
+function login(){$('app').innerHTML=`<div class="adm" style="max-width:380px;margin:30px auto"><h2 style="margin:0">لوحة التحكم · Admin</h2><input id="pw" type="password" placeholder="كلمة المرور / Password"><button class="btn" id="go">دخول · Login</button></div>`;
+$('go').onclick=()=>{if($('pw').value===PASS){authed=true;panel()}else alert('كلمة المرور خاطئة')}}
+function panel(){const c=D.find(x=>x.id===cur)||D[0];
+$('app').innerHTML=`<h2>إدارة: ${esc(c.ar)} · ${esc(c.en)}</h2><div class="bar" style="justify-content:center;margin-bottom:14px"><button class="btn" id="add">+ صنف جديد · Add item</button><button class="btn g" id="rst">إعادة الضبط · Reset</button><button class="btn g" id="exp">تصدير البيانات · Export</button><button class="btn g" id="imp">استيراد · Import</button><button class="btn g" id="out">خروج · Logout</button></div>`+c.items.map((i,k)=>`<div class="adm" data-k="${k}"><div class="r"><input data-f="an" value="${esc(i.an)}" placeholder="الاسم بالعربي"><input data-f="en" value="${esc(i.en)}" placeholder="English name" dir="ltr"></div><div class="r"><textarea data-f="ad" rows="2" placeholder="الوصف">${esc(i.ad)}</textarea><textarea data-f="ed" rows="2" dir="ltr" placeholder="Description">${esc(i.ed)}</textarea></div><div class="r"><input data-f="p" type="number" min="0" value="${i.p??''}" placeholder="السعر (ل.س) / Price"><div><input type="file" accept="image/*" data-img><small dir="ltr">images/${slug(i.en)}.jpg</small></div></div><div class="bar"><label><input type="checkbox" data-f="ok" ${i.ok?'checked':''} style="width:auto"> متوفر · Available</label><button class="btn x" data-del>حذف · Delete</button></div></div>`).join('');
+const items=c.items;
+$('app').querySelectorAll('.adm[data-k]').forEach(el=>{const it=items[el.dataset.k];
+el.querySelectorAll('[data-f]').forEach(inp=>inp.onchange=()=>{const f=inp.dataset.f;it[f]=f==='ok'?inp.checked:f==='p'?(inp.value===''?null:+inp.value):inp.value;save()});
+el.querySelector('[data-img]').onchange=e=>{const fl=e.target.files[0];if(!fl)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const cv=document.createElement('canvas'),s=Math.min(1,500/im.width);cv.width=im.width*s;cv.height=im.height*s;cv.getContext('2d').drawImage(im,0,0,cv.width,cv.height);it.img=cv.toDataURL('image/jpeg',.7);save();alert('تم حفظ الصورة ✓')};im.src=r.result};r.readAsDataURL(fl)};
+el.querySelector('[data-del]').onclick=()=>{if(confirm('حذف الصنف؟')){items.splice(el.dataset.k,1);save();panel()}}});
+$('add').onclick=()=>{items.unshift({id:c.id+Date.now(),an:'صنف جديد',en:'New item',ad:'',ed:'',p:null,ok:true,img:''});save();panel()};
+$('rst').onclick=()=>{if(confirm('استعادة القائمة الأصلية؟ / Restore original menu?')){D=mk();save();panel()}};
+const box=(v,ph)=>{document.querySelectorAll('.io').forEach(x=>x.remove());const w=document.createElement('div');w.className='adm io';w.innerHTML='<textarea rows=6 dir=ltr placeholder="'+ph+'"></textarea><div class=bar><button class="btn">OK</button></div>';$('app').prepend(w);const t=w.querySelector('textarea');t.value=v;return[t,w.querySelector('button')]};
+$('exp').onclick=()=>{const[t]=box(JSON.stringify(D,(k,v)=>k==='img'?'':v),'');t.select();try{document.execCommand('copy');alert('تم النسخ · Copied')}catch(e){}};
+$('imp').onclick=()=>{const[t,b]=box('','الصق البيانات هنا / Paste data');b.onclick=()=>{try{const x=JSON.parse(t.value);if(!Array.isArray(x)||!x.length)throw 0;D=x;cur=D[0].id;save();panel()}catch(e){alert('بيانات غير صالحة')}}};
+$('out').onclick=()=>{authed=false;location.hash='';route()}}
+function route(){admin=location.hash==='#admin';nav();admin?(authed?panel():login()):menu();$('lnk').textContent=admin?'القائمة · Menu':'لوحة التحكم · Admin'}
+$('lnk').onclick=()=>{location.hash=admin?'':'admin'};
+addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
